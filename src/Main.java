@@ -15,8 +15,7 @@ public class Main extends HttpServlet {
         String name = req.getParameter("name");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-
-        req.getParameter("address");
+        String address = req.getParameter("address");
         resp.getWriter().println("Customer Saved");
 
         resp.getWriter().println("<h1>na");
