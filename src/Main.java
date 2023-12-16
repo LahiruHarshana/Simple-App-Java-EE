@@ -12,5 +12,13 @@ public class Main extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Customer Saved");
+        String name = req.getParameter("name");
+        String email = req.getParameter("email");
+        String password = req.getParameter("password");
+
+        req.getParameter("address");
+        resp.getWriter().println("Customer Saved");
+
+        resp.getWriter().println("<h1>na");
     }
 }
