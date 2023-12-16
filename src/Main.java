@@ -14,10 +14,14 @@ public class Main extends HttpServlet {
         System.out.println("Customer Saved");
         String name = req.getParameter("name");
         String email = req.getParameter("email");
-        String password = req.getParameter("password");
+        String password = req.getParameter("phone");
         String address = req.getParameter("address");
         resp.getWriter().println("Customer Saved");
 
-        resp.getWriter().println("<h1>na");
+        resp.getWriter().println("<h1>name: " + name + "</h1>");
+        resp.getWriter().println("<h1>email: " + email + "</h1>");
+        resp.getWriter().println("<h1>phone: " + password + "</h1>");
+        resp.getWriter().println("<h1>address: " + address + "</h1>");
+
     }
 }
